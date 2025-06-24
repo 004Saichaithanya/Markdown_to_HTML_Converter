@@ -1,0 +1,64 @@
+<h1>📄 Markdown to HTML Converter 🖥️</h1>
+<p>A simple Python command-line tool that reads a <code>.md</code> (Markdown) file and converts it into a clean, well-formatted <code>.html</code> file. It supports standard Markdown syntax like headers, bold, italics, lists, links, and inline code.</p>
+<hr />
+<h2>📌 Approach</h2>
+<p>The tool uses Python's <code>markdown</code> library to parse and convert Markdown content into HTML format. Command-line arguments are handled with <code>argparse</code>, allowing users to specify the input and output file paths. It reads the content of the Markdown file, converts it to HTML, and saves the result to a new file.</p>
+<p>Basic error handling ensures that invalid or missing input files are reported to the user.</p>
+<hr />
+<h2>📦 Dependencies</h2>
+<p>| Library    | Purpose                                   |
+| :--------- | :---------------------------------------- |
+| <code>markdown</code> | Converts Markdown text to HTML format     |
+| <code>argparse</code> | Handles command-line arguments (built-in) |
+| <code>os</code>       | Checks file existence (built-in)          |</p>
+<hr />
+<h2>📥 Installation</h2>
+<p>Install the required <code>markdown</code> package if you haven't already:</p>
+<p><code>bash
+pip install markdown</code></p>
+<hr />
+<h2>🎮 How to Use</h2>
+<ol>
+<li><strong>Save the script as <code>md_to_html.py</code>.</strong></li>
+<li><strong>Run the script from your terminal:</strong></li>
+</ol>
+<p><code>bash
+python md_to_html.py input_file.md output_file.html</code></p>
+<p><strong>Example:</strong></p>
+<p><code>bash
+python md_to_html.py sample.md result.html</code></p>
+<p>✔️ This will convert <code>sample.md</code> to <code>result.html</code>.</p>
+<hr />
+<h2>📑 Supported Markdown Syntax</h2>
+<ul>
+<li>Headers (<code>#</code>, <code>##</code>, etc.)</li>
+<li>Bold (<code>**text**</code>)</li>
+<li>Italics (<code>*text*</code>)</li>
+<li>Lists (<code>- item</code>)</li>
+<li>Links (<code>[title](URL)</code>)</li>
+<li>Inline code (<code>`code`</code>)</li>
+</ul>
+<hr />
+<h2>📸 Example</h2>
+<p><strong>sample.md</strong></p>
+<p>```markdown</p>
+<h1>Hello World</h1>
+<p>This is a <strong>bold</strong> text and <em>italic</em> text.</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+<p><a href="https://openai.com">OpenAI</a></p>
+<p>Inline: <code>print("Hello")</code>
+```</p>
+<p>✔️ Converts to clean HTML code with proper tags.</p>
+<hr />
+<h2>💡 Future Improvements</h2>
+<ul>
+<li>Add HTML boilerplate (<code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>)</li>
+<li>Option to apply custom CSS styling</li>
+<li>Live preview in browser</li>
+</ul>
+<hr />
+<h2>📜 License</h2>
+<p>Open source for educational/demo purposes under the MIT License.</p>
